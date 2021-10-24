@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mari's Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+</head>
+	<body>
+	    <header class="jumbotron text-center">
+            <h1>Welcome</h1>
+            <p>Domestic animals</p>
+            <nav>
+                <a href="{% url 'website:index' %}" class="btn btn-info">Introduction</a>
+                <a href="{% url 'website:home' %}" class="btn btn-info">How to adopt</a>
+                <a href="{% url 'website:about' %}" class="btn btn-info">Info</a>
+            </nav>
+
+            {% block btt %}
+	        {% endblock btt %}
+
+        </header>
+	    <article class="container">
+		<main class="col-sm-6">
+            {% block main %}
+	        {% endblock main %}
+        </main>
+		<aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/image/image.jpg' %}">
+        </aside>
+	    </article>
+	    <footer>Thank you for visiting!</footer>
+	</body>
+</html>

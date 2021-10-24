@@ -1,0 +1,17 @@
+{% extends 'website/layout.html' %}
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+{% block btt %}
+    <nav>
+        <a href="{% url 'website:main' %}" class="btn btn-success">Back to main</a>
+    </nav>
+{% endblock btt %}
+
+{% block main %}
+    <h3>What does it take to adopt a pet?</h3>
+    <p>Pet adoption is the process of transferring responsibility for a pet that was previously owned by another party such as a person, shelter, or rescue organization. Common sources for adoptable pets are animal shelters and rescue groups. Some organizations give adopters ownership of the pet, while others use a guardianship model wherein the organization retains some control over the animal's future use or care.</p>
+    <p>There are several sites where you can look for a domestic animal to adopt, maybe your next partner is right here:</p>
+    <a href="https://www.friendsofsfacc.org/featured-animals-for-adoption/" class="btn btn-outline-secondary">Adoption center</a>
+{% endblock %}

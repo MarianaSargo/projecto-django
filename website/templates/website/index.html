@@ -1,0 +1,17 @@
+{% extends 'website/layout.html' %}
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+{% block btt %}
+    <nav>
+        <a href="{% url 'website:main' %}" class="btn btn-success">Back to main</a>
+    </nav>
+{% endblock btt %}
+
+{% block main %}
+    <h3>Domestic animals</h3>
+    <p>The domestication of animals is the mutual relationship between animals and the humans who have influence on their care and reproduction.
+    Domestication can be considered as the final phase of intensification in the relationship between animal or plant sub-populations and human societies, but it is divided into several grades of intensification. For studies in animal domestication, researchers have proposed five distinct categories: wild, captive wild, domestic, cross-breeds and feral.
+    </p>
+{% endblock %}

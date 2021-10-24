@@ -1,0 +1,16 @@
+{% extends 'website/layout.html' %}
+
+{% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+
+{% block btt %}
+    <nav>
+        <a href="{% url 'website:main' %}" class="btn btn-success">Back to main</a>
+    </nav>
+{% endblock btt %}
+
+{% block main %}
+    <h3>Information</h3>
+    <p>This website was created using django!</p>
+    <p>By: Mariana Gonçalves in Lusiada University</p>
+{% endblock %}

@@ -1,0 +1,20 @@
+
+footer {
+   position: fixed;
+   bottom: 30px;
+   width: 100%;
+   text-align: center;
+}
+body > article {
+    max-width: 800px;
+    margin: auto;
+}
+img{
+    display: block;
+    margin-left: 78%;
+    width: 50%;
+}
+
+a{
+    margin: 2px;
+}
